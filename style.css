@@ -1,0 +1,17 @@
+:root { --primary: #2563eb; --success: #16a34a; --danger: #dc2626; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f3f4f6; margin: 0; padding: 20px; display: flex; justify-content: center; }
+.container { background: white; width: 100%; max-width: 800px; padding: 25px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; }
+#display { font-size: 3.5rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin: 20px 0; color: #1f2937; }
+
+/* Botones Grandes para móviles */
+.main-controls button { padding: 20px; font-size: 1.1rem; font-weight: bold; cursor: pointer; border: none; border-radius: 10px; margin: 5px; width: 100%; max-width: 200px; transition: 0.3s; }
+.btn-start { background: var(--success); color: white; }
+.btn-capture { background: var(--primary); color: white; }
+.btn-stop { background: var(--danger); color: white; }
+button:disabled { background: #d1d5db; cursor: not-allowed; }
+
+.table-container { margin-top: 30px; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 15px; border-bottom: 1px solid #e5e7eb; text-align: center; }
+
+@media print { .main-controls, .secondary-controls { display: none; } }
