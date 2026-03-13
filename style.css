@@ -1,17 +1,106 @@
-:root { --primary: #2563eb; --success: #16a34a; --danger: #dc2626; }
-body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f3f4f6; margin: 0; padding: 20px; display: flex; justify-content: center; }
-.container { background: white; width: 100%; max-width: 800px; padding: 25px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; }
-#display { font-size: 3.5rem; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin: 20px 0; color: #1f2937; }
+:root {
+    --bg-dark: #121212;
+    --card-dark: #1e1e1e;
+    --text-light: #e0e0e0;
+    --success: #2ecc71;  /* Verde */
+    --warning: #f1c40f;  /* Amarillo */
+    --danger: #e74c3c;   /* Rojo */
+    --info: #3498db;     /* Azul */
+    --orange: #e67e22;   /* Naranja */
+}
 
-/* Botones Grandes para móviles */
-.main-controls button { padding: 20px; font-size: 1.1rem; font-weight: bold; cursor: pointer; border: none; border-radius: 10px; margin: 5px; width: 100%; max-width: 200px; transition: 0.3s; }
-.btn-start { background: var(--success); color: white; }
-.btn-capture { background: var(--primary); color: white; }
-.btn-stop { background: var(--danger); color: white; }
-button:disabled { background: #d1d5db; cursor: not-allowed; }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    margin: 0;
+    padding: 20px;
+}
 
-.table-container { margin-top: 30px; overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; }
-th, td { padding: 15px; border-bottom: 1px solid #e5e7eb; text-align: center; }
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
 
-@media print { .main-controls, .secondary-controls { display: none; } }
+/* Cronómetro centrado y verde */
+#display {
+    font-size: 5rem;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    margin: 30px 0;
+    color: var(--success);
+    text-shadow: 0 0 15px rgba(46, 204, 113, 0.4);
+}
+
+/* Layout Flexbox */
+.layout-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Panel Izquierdo */
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 250px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #000; /* Texto oscuro para mejor contraste en botones claros */
+}
+
+/* Colores de botones solicitados */
+.btn-start { background: var(--success); }
+.btn-capture { background: var(--warning); }
+.btn-stop { background: var(--danger); color: white !important; }
+.btn-new { background: var(--info); color: white !important; }
+.btn-print { background: var(--orange); color: white !important; }
+
+button:disabled {
+    background: #444 !important;
+    color: #888 !important;
+    cursor: not-allowed;
+}
+
+/* Tabla a la derecha */
+.table-container {
+    flex: 2;
+    background: var(--card-dark);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 2px solid #333;
+    padding: 10px;
+    color: var(--info);
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #333;
+}
+
+@media print {
+    .sidebar { display: none; }
+    body { background: white; color: black; }
+    #display { color: black; }
+}
