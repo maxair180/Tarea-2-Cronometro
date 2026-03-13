@@ -9,31 +9,35 @@
 <body>
     <div class="container">
         <h1>Control de Tiempos</h1>
-        <div id="display">00:00:00.000</div>
         
-        <div class="main-controls">
-            <button id="startBtn" class="btn-start">INICIAR CARRERA</button>
-            <button id="captureBtn" class="btn-capture" disabled>CAPTURAR TIEMPO</button>
-            <button id="stopBtn" class="btn-stop" disabled>DETENER</button>
-        </div>
+        <div id="display">00:00.0</div>
+        
+        <div class="layout-wrapper">
+            <div class="sidebar">
+                <div class="main-controls">
+                    <button id="startBtn" class="btn-start">INICIAR CARRERA</button>
+                    <button id="captureBtn" class="btn-capture" disabled>CAPTURAR TIEMPO</button>
+                    <button id="stopBtn" class="btn-stop" disabled>DETENER</button>
+                </div>
+                <div class="secondary-controls">
+                    <button id="newSessionBtn" class="btn-new" onclick="location.reload()">NUEVA SESIÓN</button>
+                    <button id="printBtn" class="btn-print" onclick="window.print()">IMPRIMIR REPORTE</button>
+                </div>
+            </div>
 
-        <div class="secondary-controls">
-            <button onclick="window.print()">Exportar / Imprimir</button>
-            <button onclick="location.reload()">Nueva Sesión</button>
-        </div>
-
-        <div class="table-container">
-            <table id="resultsTable">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Tiempo Total</th>
-                        <th>Dif. con Primero</th>
-                        <th>Dif. con Anterior</th>
-                    </tr>
-                </thead>
-                <tbody id="results"></tbody>
-            </table>
+            <div class="table-container">
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tiempo Total</th>
+                            <th>Dif. Primero</th>
+                            <th>Dif. Anterior</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results"></tbody>
+                </table>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
