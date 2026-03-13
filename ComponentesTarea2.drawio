@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="Página-1" id="Y3lsFm4yMUGEFDow5gvF">
+    <mxGraphModel dx="1042" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5Rx0iOrRQdqc0LUi-QQ2-11" parent="1" style="html=1;dropTarget=0;whiteSpace=wrap;" value="Web Browser" vertex="1">
+          <mxGeometry height="170" width="500" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5Rx0iOrRQdqc0LUi-QQ2-12" parent="5Rx0iOrRQdqc0LUi-QQ2-11" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
+          <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5Rx0iOrRQdqc0LUi-QQ2-13" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="UI Module&lt;div&gt;(index.html + style.css)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="120" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5Rx0iOrRQdqc0LUi-QQ2-14" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Timer Engine&lt;div&gt;(script.js)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="300" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5Rx0iOrRQdqc0LUi-QQ2-15" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Data Store&lt;div&gt;(Array de Tiempos)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="460" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5Rx0iOrRQdqc0LUi-QQ2-16" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="GitHub Pages&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="300" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="5Rx0iOrRQdqc0LUi-QQ2-19" edge="1" parent="1" source="5Rx0iOrRQdqc0LUi-QQ2-13" style="endArrow=block;startArrow=block;endFill=1;startFill=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.008;entryY=0.472;entryDx=0;entryDy=0;entryPerimeter=0;" target="5Rx0iOrRQdqc0LUi-QQ2-14" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="324" y="124.5" as="sourcePoint" />
+            <mxPoint x="484" y="124.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5Rx0iOrRQdqc0LUi-QQ2-23" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="104.5" as="sourcePoint" />
+            <mxPoint x="460" y="104.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5Rx0iOrRQdqc0LUi-QQ2-24" edge="1" parent="1" source="5Rx0iOrRQdqc0LUi-QQ2-16" style="endArrow=classic;html=1;rounded=0;exitX=0.588;exitY=-0.08;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="260" as="sourcePoint" />
+            <mxPoint x="360" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
